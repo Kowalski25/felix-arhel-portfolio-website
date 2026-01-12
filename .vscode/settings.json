@@ -1,0 +1,10 @@
+{
+  "editor.codeActionsOnSave": {
+   "source.organizeImports.biome": "explicit",
+   "source.fixAll.biome": "explicit"
+  },
+  "cSpell.files": [
+   "src/**"
+  ],
+  "editor.tabSize": 2
+}

@@ -1,0 +1,50 @@
+{
+	"name": "react-starter",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "biome lint ./src",
+		"format": "biome format --write ./src",
+		"preview": "vite preview",
+		"g": "cross-env NODE_OPTIONS='--import tsx' plop --plopfile=plopfile.ts",
+		"test": "vitest",
+		"coverage": "vitest run --coverage"
+	},
+	"dependencies": {
+		"@tanstack/react-query": "^5.90.16",
+		"@tanstack/react-router": "^1.146.2",
+		"@tanstack/react-router-devtools": "^1.146.2",
+		"axios": "^1.13.2",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.11",
+		"@tanstack/router-plugin": "^1.146.3",
+		"@testing-library/dom": "^10.4.1",
+		"@testing-library/react": "^16.3.1",
+		"@types/node": "^24.10.1",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.1.1",
+		"@vitest/coverage-v8": "^4.0.16",
+		"babel-plugin-react-compiler": "^1.0.0",
+		"cross-env": "^10.1.0",
+		"global-jsdom": "^27.0.0",
+		"globals": "^16.5.0",
+		"jsdom": "^27.4.0",
+		"plop": "^4.0.4",
+		"typescript": "~5.9.3",
+		"typescript-eslint": "^8.46.4",
+		"vite": "npm:rolldown-vite@7.2.5",
+		"vite-plugin-svgr": "^4.5.0",
+		"vite-tsconfig-paths": "^6.0.4",
+		"vitest": "^4.0.16"
+	},
+	"resolutions": {
+		"vite": "npm:rolldown-vite@7.2.5"
+	}
+}
