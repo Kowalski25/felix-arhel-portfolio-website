@@ -14,6 +14,10 @@ const RootLayout = () => (
           label: "About",
           href: "/about",
         },
+        {
+          label: "Blog",
+          href: "/blog",
+        },
       ]}
     />
     <hr />
