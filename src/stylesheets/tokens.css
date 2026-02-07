@@ -1,0 +1,31 @@
+:root {
+  --font-family-base:
+    -apple-system, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --fw-black: 900;
+  --fw-extrabold: 800;
+  --fw-bold: 700;
+  --fw-semibold: 600;
+  --fw-medium: 500;
+  --fw-normal: 400;
+
+  --spacing-50: 0.125rem; /* 2px */
+  --spacing-100: 0.25rem; /* 4px */
+  --spacing-200: 0.5rem; /* 8px */
+  --spacing-300: 0.75rem; /* 12px */
+  --spacing-400: 1rem; /* 16px */
+  --spacing-500: 1.25rem; /* 20px */
+  --spacing-600: 1.5rem; /* 24px */
+  --spacing-700: 2rem; /* 32px */
+  --spacing-800: 3rem; /* 48px */
+  --spacing-900: 4rem; /* 64px */
+  --spacing-1000: 5rem; /* 80px */
+
+  --spacing-xs: var(--spacing-200); /* 8px */
+  --spacing-sm: var(--spacing-300); /* 12px */
+  --spacing-base: var(--spacing-400); /* 16px */
+  --spacing-md: var(--spacing-600); /* 24px */
+  --spacing-lg: var(--spacing-700); /* 32px */
+  --spacing-xl: var(--spacing-800); /* 48px */
+}
