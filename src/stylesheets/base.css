@@ -4,8 +4,10 @@
 
 html,
 body {
+  color: var(--text-main);
+  font-family: var(--ff-main);
   -webkit-text-size-adjust: none;
-  line-height: 1.4;
   overflow: initial;
   text-size-adjust: none;
 }
+

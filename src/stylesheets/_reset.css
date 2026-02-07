@@ -1,64 +1,50 @@
 /*
- * Modern CSS Reset
- * @link https://github.com/hankchizljaw/modern-css-reset
+ * Josh Comeau CSS Reset
+ * @link https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
-/* Box sizing rules */
+/* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* 2. Remove default margin */
+*:not(dialog) {
   margin: 0;
 }
 
-p,
-li,
-h1,
-h2,
-h3,
-h4 {
-  /* Help prevent overflow of long words/names/URLs */
-  word-break: break-word;
-
-  /* Optional, not supported for all languages */
-  /* hyphens: auto; */
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
 }
 
-html,
 body {
-  overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100dvh;
-  font-family: sans-serif;
-  font-size: 100%;
+  /* 4. Add accessible line-height */
   line-height: 1.5;
-  text-rendering: optimizeSpeed;
+  /* 
+    5. The original value of this from Josh is antialiased.
+    I decided to use the default value - auto (I just explicitly added it for context)
+    to prioritized Figtree's natural weight and legibility. Since using 'antialiased'
+    makes the Figtree font looks too thin or blurry.
+  */
+  -webkit-font-smoothing: auto;
 }
 
-/* Make images easier to work with */
-img {
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
-  max-inline-size: 100%;
+  max-width: 100%;
 }
 
-/* Inherit fonts for inputs and buttons */
+/* 7. Inherit fonts for form controls */
 input,
 button,
 textarea,
@@ -66,18 +52,35 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
 
-  html {
-    scroll-behavior: initial;
-  }
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
 }
