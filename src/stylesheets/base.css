@@ -6,8 +6,8 @@ html,
 body {
   color: var(--text-main);
   font-family: var(--ff-main);
-  -webkit-text-size-adjust: none;
   overflow: initial;
   text-size-adjust: none;
+  -webkit-text-size-adjust: none;
 }
 

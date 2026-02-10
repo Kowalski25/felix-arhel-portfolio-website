@@ -28,7 +28,7 @@ body {
   /* 
     5. The original value of this from Josh is antialiased.
     I decided to use the default value - auto (I just explicitly added it for context)
-    to prioritized Figtree's natural weight and legibility. Since using 'antialiased'
+    to prioritize Figtree's natural weight and legibility. Since using 'antialiased'
     makes the Figtree font looks too thin or blurry.
   */
   -webkit-font-smoothing: auto;
