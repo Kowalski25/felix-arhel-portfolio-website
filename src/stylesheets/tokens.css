@@ -10,19 +10,25 @@
   --fw-500: 500;
   --fw-400: 400;
 
-  --fs-100: 0.5rem;
-  --fs-200: 0.875rem;
-  --fs-300: 1rem;
-  --fs-400: 1.125rem;
-  --fs-500: 1.25rem;
-  --fs-600: 1.625rem;
-  --fs-700: 2rem;
-  --fs-800: 2.75rem;
+  /* Fixed Scale: 
+     Base is 1.125rem (18px).
+     Bottom end is lifted to legible standards.
+  */
+  --fs-100: 0.75rem;    /* 12px - Smallest legible size (captions) */
+  --fs-200: 0.875rem;   /* 14px - UI elements / meta text */
+  --fs-300: 1rem;       /* 16px - Secondary body text */
+  --fs-400: 1.125rem;   /* 18px - BASE BODY */
+  --fs-500: 1.375rem;   /* 22px - Subheadings / Lead text */
+  --fs-600: 1.75rem;    /* 28px - H4 */
+  --fs-700: 2.25rem;    /* 36px - H3 */
+  --fs-800: 3rem;       /* 48px - H2 */
+  --fs-900: 4rem;       /* 64px - H1 / Hero */
 
-  --font-size-x-small: var(--fs-100);
-  --font-size-small: var(--fs-200);
-  --font-size-medium: var(--fs-400); 
-  --font-size-large: var(--fs-600);
+  /* Semantic Mapping */
+  --font-size-x-small: var(--fs-200);
+  --font-size-small: var(--fs-300);
+  --font-size-medium: var(--fs-400);
+  --font-size-large: var(--fs-500);   
   --font-size-x-large: var(--fs-700);
   --font-size-xx-large: var(--fs-800);
 
@@ -32,12 +38,12 @@
   --font-weight-bold: var(--fw-700);
   --font-weight-extrabold: var(--fw-800);
 
-  /* --- Spacing System --- */
+  /* --- Spacing --- */
   --spacing-50: 0.125rem;
   --spacing-100: 0.25rem;
   --spacing-200: 0.5rem;
   --spacing-300: 0.75rem;
-  --spacing-400: 1rem;
+  --spacing-400: 1rem;    /* Standard 16px */
   --spacing-500: 1.25rem;
   --spacing-600: 1.5rem;
   --spacing-700: 2rem;
@@ -62,8 +68,8 @@
   --clr-gray-500: hsl(220, 9%, 46%);
 
   /* Accent */
-  --clr-blue-100: hsl(204, 94%, 94%); /* for backgrounds */
-  --clr-blue-600: hsl(200, 98%, 39%); /* for text/icons */
+  --clr-blue-100: hsl(204, 94%, 94%);
+  --clr-blue-600: hsl(200, 98%, 39%);
 
   /* --- Semantic Variables --- */
   --page-bg: var(--clr-white);
