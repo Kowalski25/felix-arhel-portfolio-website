@@ -29,7 +29,6 @@ const RootLayout = () => (
         },
       ]}
     />
-    <hr />
     <Outlet />
     <TanStackRouterDevtools />
   </div>

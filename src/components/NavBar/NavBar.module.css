@@ -3,12 +3,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-block: 1rem;
 }
 
 .list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;

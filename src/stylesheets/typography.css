@@ -3,7 +3,7 @@ h1 {
   font-weight: var(--font-weight-semibold);
   letter-spacing: -0.03em;
   line-height: 110%;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 p {

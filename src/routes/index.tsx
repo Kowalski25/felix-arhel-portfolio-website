@@ -7,11 +7,11 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div>
-      <h1>
-        Im Felix — a front-end focused Software Developer both on mobile and web
-        applications.
-      </h1>
-      <p>Software developer currently working as a frontend mobile and web application developer at App-Bar.</p>
+      <h1>Hi, I’m Felix. I build for web and mobile.</h1>
+      <p>
+        Software developer currently working as a frontend mobile and web
+        application developer at App-Bar.
+      </p>
     </div>
   );
 }
